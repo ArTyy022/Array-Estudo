@@ -18,7 +18,7 @@ public class Principal {
         listaDeProdutos.add(produto2);
         listaDeProdutos.add(produto3);
         System.out.println("produtos: " + listaDeProdutos.size());
-        System.out.println( );
+        System.out.println("Primeiro produto: " + listaDeProdutos.get(0).toString());
 
 
         }
