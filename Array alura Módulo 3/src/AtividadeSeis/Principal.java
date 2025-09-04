@@ -1,5 +1,6 @@
 package AtividadeSeis;
 
+
 import java.util.ArrayList;
 
 public class Principal {
@@ -13,7 +14,17 @@ public class Principal {
         listaDeConta.add(contaBancaria1);
         listaDeConta.add(contaBancaria2);
         listaDeConta.add(contaBancaria3);
-        
+
+        ContaBancaria contaMaiorSaldo = listaDeConta.get(0);
+
+        for(ContaBancaria conta: listaDeConta){
+            if (conta.getSaldo() > contaMaiorSaldo.getSaldo()){
+                contaMaiorSaldo = conta;
+            }
+
+        }
+        System.out.println("Conta com o maior saldo - Número: " + contaMaiorSaldo.getNumeroDaConta() +
+                ", Saldo: " + contaMaiorSaldo.getSaldo());
 
     }
 }
