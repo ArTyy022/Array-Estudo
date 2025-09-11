@@ -7,7 +7,7 @@ public class Main {
         Student student2 = new Student("Leon",6);
         Student student3 = new Student("Jake", 9);
 
-    if(notice >= 7 )
+
 
     }
 }

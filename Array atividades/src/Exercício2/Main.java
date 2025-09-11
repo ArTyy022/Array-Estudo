@@ -1,29 +1,24 @@
 package Exercício2;
 
 import java.util.ArrayList;
-import java.util.Collections;
 
 
 public class Main {
     public static void main(String[] args) {
 
-        Produto produto1 = new Produto();
-        produto1.nome = "Arroz";
-        produto1.preco = 8;
+        Product product1 = new Product("Rice",10);
 
-        Produto produto2 = new Produto();
-        produto2.nome = "Feijão";
-        produto2.preco = 6;
+        Product product2 = new Product("bread",5);
 
 
-        ArrayList<Produto> listaDeProdutos = new ArrayList<>();
-        listaDeProdutos.add(produto1);
-        listaDeProdutos.add(produto2);
+        ArrayList<Product> listaDeProdutos = new ArrayList<>();
+        listaDeProdutos.add(product1);
+        listaDeProdutos.add(product2);
         System.out.println("Lista de produtos: " + listaDeProdutos.size());
-        if(produto1.preco >= 7){
-            System.out.println("Produto mais caro: " + produto1.nome);
-        } else {
-            System.out.println("Produto mais caro: " + produto2.nome);
+        if(product1.preco  >= 7){
+            System.out.println("Produto mais caro: " + listaDeProdutos.get(0).nome);
+        } else if (product2.preco >= 7){
+            System.out.println("Produto mais caro: " + listaDeProdutos.get(1).nome);
         }
         }
 
