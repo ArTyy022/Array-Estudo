@@ -1,12 +1,12 @@
 package Exercício2;
 
 public class Product {
-     String nome;
-     int preco;
+     String name;
+     int price;
 
      public Product(String nome, int preco){
-         this.nome =nome;
-         this.preco = preco;
+         this.name =nome;
+         this.price = preco;
      }
     }
 

@@ -14,11 +14,11 @@ public class Main {
         ArrayList<Product> listaDeProdutos = new ArrayList<>();
         listaDeProdutos.add(product1);
         listaDeProdutos.add(product2);
-        System.out.println("Lista de produtos: " + listaDeProdutos.size());
-        if(product1.preco  >= 7){
-            System.out.println("Produto mais caro: " + listaDeProdutos.get(0).nome);
-        } else if (product2.preco >= 7){
-            System.out.println("Produto mais caro: " + listaDeProdutos.get(1).nome);
+        System.out.println("List of product: " + listaDeProdutos.size());
+        if(product1.price >= 7){
+            System.out.println("Most expensive product: " + listaDeProdutos.get(0).name);
+        } else if (product2.price >= 7){
+            System.out.println("Most expensive product: " + listaDeProdutos.get(1).name);
         }
         }
 
